@@ -1,0 +1,89 @@
+/* ---------- 1. VARIABEL WARNA & FONT ----------
+   Ini "kotak cat" utama. Ganti nilai di sini kalau mau ubah
+   warna di SELURUH halaman sekaligus, tanpa cari satu-satu. */
+   
+:root {
+  --bg: #fafaff;
+  --surface: #ffffff;
+  --ink: #1c1b2e;
+  --ink-muted: #767291;
+  --accent: #5b4fe5;
+  --accent-dark: #4338ca;
+  --accent-soft: #eeeafe;
+  --warm: #5f3eca;
+  --warm-soft: #fff1e2;
+  --border: #e6e4f3;
+
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius: 16px;
+  --shadow-soft: 0 8px 24px rgba(28, 27, 46, 0.06);
+  --shadow-hover: 0 14px 32px rgba(91, 79, 229, 0.16);
+}
+
+/* ---------- 2. RESET DASAR ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* biar gak ketutup navbar pas klik menu */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.section-muted {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 48px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
